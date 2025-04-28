@@ -1,125 +1,218 @@
 import { QuizQuestion } from '../types';
 
 const quizQuestions: QuizQuestion[] = [
+  // CSS Questions
   {
     id: 1,
-    question: "What is the capital of France?",
-    options: ["London", "Berlin", "Paris", "Madrid"],
-    correctAnswer: "Paris"
+    question: "What is the default value of the `position` property in CSS?",
+    options: ["absolute", "fixed", "relative", "static"],
+    correctAnswer: "static"
   },
   {
     id: 2,
-    question: "Which planet is known as the Red Planet?",
-    options: ["Earth", "Mars", "Jupiter", "Venus"],
-    correctAnswer: "Mars"
+    question: "Which property is used to change the text color in CSS?",
+    options: ["text-color", "color", "font-color", "text-style"],
+    correctAnswer: "color"
   },
   {
     id: 3,
-    question: "What is the largest ocean on Earth?",
-    options: ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
-    correctAnswer: "Pacific Ocean"
+    question: "How do you center an element horizontally using CSS?",
+    options: ["margin: auto;", "text-align: center;", "position: center;", "align: center;"],
+    correctAnswer: "margin: auto;"
   },
   {
     id: 4,
-    question: "Who painted the Mona Lisa?",
-    options: ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
-    correctAnswer: "Leonardo da Vinci"
+    question: "What is the purpose of the `z-index` property?",
+    options: ["To change the background color of an element", "To set the stacking order of elements", "To position elements vertically", "To adjust text size"],
+    correctAnswer: "To set the stacking order of elements"
   },
   {
     id: 5,
-    question: "Which element has the chemical symbol 'O'?",
-    options: ["Gold", "Oxygen", "Osmium", "Oganesson"],
-    correctAnswer: "Oxygen"
+    question: "Which CSS property is used to change the font of an element?",
+    options: ["font-family", "text-font", "font-size", "font-style"],
+    correctAnswer: "font-family"
   },
   {
     id: 6,
-    question: "In what year did World War II end?",
-    options: ["1943", "1945", "1947", "1950"],
-    correctAnswer: "1945"
+    question: "Which CSS property is used to apply shadow to text?",
+    options: ["text-shadow", "box-shadow", "shadow", "shadow-text"],
+    correctAnswer: "text-shadow"
   },
   {
     id: 7,
-    question: "What is the capital of Japan?",
-    options: ["Seoul", "Beijing", "Tokyo", "Bangkok"],
-    correctAnswer: "Tokyo"
+    question: "How do you create a responsive design in CSS?",
+    options: ["By using @font-face", "By using position: absolute", "By using media queries", "By using z-index"],
+    correctAnswer: "By using media queries"
   },
   {
     id: 8,
-    question: "Which is the largest planet in our solar system?",
-    options: ["Saturn", "Jupiter", "Neptune", "Uranus"],
-    correctAnswer: "Jupiter"
+    question: "Which CSS property is used to create a multi-column layout?",
+    options: ["columns", "multi-column", "column-count", "column-layout"],
+    correctAnswer: "column-count"
   },
   {
     id: 9,
-    question: "What is the chemical symbol for Gold?",
-    options: ["Au", "Ag", "Fe", "Cu"],
-    correctAnswer: "Au"
+    question: "Which of the following properties does Flexbox use to align items?",
+    options: ["justify-content", "align-items", "align-self", "All of the above"],
+    correctAnswer: "All of the above"
   },
   {
     id: 10,
-    question: "Who wrote 'Romeo and Juliet'?",
-    options: ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain"],
-    correctAnswer: "William Shakespeare"
+    question: "What does the box-sizing: border-box; CSS property do?",
+    options: ["Includes padding and border in the element’s total width and height", "Removes the border of the element", "Changes the border style to box shape", "Changes the size of the box to its content"],
+    correctAnswer: "Includes padding and border in the element’s total width and height"
   },
+
+  // Bootstrap Questions
   {
     id: 11,
-    question: "What is the capital of Australia?",
-    options: ["Sydney", "Melbourne", "Canberra", "Perth"],
-    correctAnswer: "Canberra"
+    question: "Which class in Bootstrap is used to create a container that spans the entire width of the page?",
+    options: [".container", ".container-fluid", ".fluid-container", ".wide-container"],
+    correctAnswer: ".container-fluid"
   },
   {
     id: 12,
-    question: "Which country is known as the Land of the Rising Sun?",
-    options: ["China", "Korea", "Japan", "Thailand"],
-    correctAnswer: "Japan"
+    question: "Which Bootstrap class is used to align text to the center?",
+    options: [".text-center", ".align-center", ".center-text", ".text-align-center"],
+    correctAnswer: ".text-center"
   },
   {
     id: 13,
-    question: "What is the hardest natural substance on Earth?",
-    options: ["Gold", "Iron", "Diamond", "Platinum"],
-    correctAnswer: "Diamond"
+    question: "Which grid class in Bootstrap defines a 12-column grid?",
+    options: [".row", ".grid-12", ".col-12", ".col-md-12"],
+    correctAnswer: ".col-12"
   },
   {
     id: 14,
-    question: "Who invented the telephone?",
-    options: ["Thomas Edison", "Alexander Graham Bell", "Nikola Tesla", "Albert Einstein"],
-    correctAnswer: "Alexander Graham Bell"
+    question: "How do you make a button look primary in Bootstrap?",
+    options: [".btn-primary", ".btn-success", ".primary-btn", ".btn-standard"],
+    correctAnswer: ".btn-primary"
   },
   {
     id: 15,
-    question: "What is the largest mammal in the world?",
-    options: ["African Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
-    correctAnswer: "Blue Whale"
+    question: "Which class in Bootstrap helps in creating a collapsible navigation bar?",
+    options: [".navbar-collapse", ".collapse-navbar", ".navbar-expand", ".nav-collapse"],
+    correctAnswer: ".navbar-collapse"
   },
   {
     id: 16,
-    question: "Which continent is the largest by land area?",
-    options: ["North America", "Africa", "Asia", "Europe"],
-    correctAnswer: "Asia"
+    question: "Which class would you use to make a table responsive in Bootstrap?",
+    options: [".table-responsive", ".table-fluent", ".table-overflow", ".table-fixed"],
+    correctAnswer: ".table-responsive"
   },
   {
     id: 17,
-    question: "What is the capital of Brazil?",
-    options: ["Rio de Janeiro", "São Paulo", "Brasília", "Salvador"],
-    correctAnswer: "Brasília"
+    question: "Which class in Bootstrap is used for a horizontal line?",
+    options: [".divider", ".hr-line", ".hr", ".border-top"],
+    correctAnswer: ".hr"
   },
   {
     id: 18,
-    question: "Who was the first person to walk on the moon?",
-    options: ["Buzz Aldrin", "Neil Armstrong", "Yuri Gagarin", "John Glenn"],
-    correctAnswer: "Neil Armstrong"
+    question: "How do you define a column in Bootstrap’s grid system?",
+    options: [".col-md", ".col-lg", ".col", ".col-xxl"],
+    correctAnswer: ".col-md"
   },
   {
     id: 19,
-    question: "What is the main component of the Sun?",
-    options: ["Oxygen", "Carbon", "Helium", "Hydrogen"],
-    correctAnswer: "Hydrogen"
+    question: "Which class in Bootstrap helps to create rounded corners on elements?",
+    options: [".rounded", ".round-corners", ".corner-radius", ".radius"],
+    correctAnswer: ".rounded"
   },
+
+  // JavaScript Questions
   {
     id: 20,
-    question: "Which is the smallest prime number?",
-    options: ["0", "1", "2", "3"],
-    correctAnswer: "2"
+    question: "Which of the following is a correct way to define a function in JavaScript?",
+    options: ["function myFunction[]{}", "function myFunction(){}", "function = myFunction(){}", "function: myFunction(){}"],
+    correctAnswer: "function myFunction(){}"
+  },
+  {
+    id: 21,
+    question: "Which symbol is used for comments in JavaScript?",
+    options: ["//", "/* */", "#", "Both A and B"],
+    correctAnswer: "Both A and B"
+  },
+  {
+    id: 22,
+    question: "What does NaN represent in JavaScript?",
+    options: ["A function", "An invalid number", "A string type", "A special operator"],
+    correctAnswer: "An invalid number"
+  },
+  {
+    id: 23,
+    question: "Which of the following is used to convert a string to a number in JavaScript?",
+    options: ["parseInt()", "toString()", "convertToNumber()", "parseFloat()"],
+    correctAnswer: "parseInt()"
+  },
+  {
+    id: 24,
+    question: "What will the following code output: console.log(2 + '2');?",
+    options: ["4", "22", "NaN", "undefined"],
+    correctAnswer: "22"
+  },
+
+  // Cloud - AWS Questions
+  {
+    id: 25,
+    question: "What does AWS stand for?",
+    options: ["Automated Web Services", "Amazon Web Services", "Application Web Services", "Advanced Web Solutions"],
+    correctAnswer: "Amazon Web Services"
+  },
+  {
+    id: 26,
+    question: "Which AWS service is used for computing in the cloud?",
+    options: ["EC2", "S3", "Lambda", "RDS"],
+    correctAnswer: "EC2"
+  },
+  {
+    id: 27,
+    question: "Which AWS service is used to store files in the cloud?",
+    options: ["EC2", "RDS", "S3", "VPC"],
+    correctAnswer: "S3"
+  },
+  {
+    id: 28,
+    question: "Which AWS service is designed for managing databases?",
+    options: ["EC2", "RDS", "Lambda", "S3"],
+    correctAnswer: "RDS"
+  },
+  {
+    id: 29,
+    question: "What is the purpose of AWS Lambda?",
+    options: ["To run virtual machines in the cloud", "To provide serverless computing", "To manage DNS", "To monitor network traffic"],
+    correctAnswer: "To provide serverless computing"
+  },
+
+  // General Questions
+  {
+    id: 30,
+    question: "What does HTTP stand for?",
+    options: ["HyperText Transfer Protocol", "HyperText Transmission Protocol", "Hyper Transfer Text Protocol", "High Transfer Text Protocol"],
+    correctAnswer: "HyperText Transfer Protocol"
+  },
+  {
+    id: 31,
+    question: "Which of the following is a type of database?",
+    options: ["MySQL", "Linux", "MongoDB", "Both A and C"],
+    correctAnswer: "Both A and C"
+  },
+  {
+    id: 32,
+    question: "What is the purpose of a router in networking?",
+    options: ["To connect computers within a network", "To connect different networks together", "To manage website traffic", "To host websites"],
+    correctAnswer: "To connect different networks together"
+  },
+  {
+    id: 33,
+    question: "Which of the following is not a programming language?",
+    options: ["Python", "Java", "HTML", "SQL"],
+    correctAnswer: "HTML"
+  },
+  {
+    id: 34,
+    question: "What is Git used for in software development?",
+    options: ["A text editor", "A version control system", "A compiler", "A build tool"],
+    correctAnswer: "A version control system"
   }
 ];
 

@@ -33,7 +33,8 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-200 dark:from-gray-900 dark:to-gray-800 py-8 px-4 theme-transition">
+    <div className="min-h-screen bg-gradient-to-br from-red-400 via-yellow-400 to-blue-500 dark:from-gray-900 dark:via-gray-700 dark:to-gray-800 text-black dark:text-white font-retro py-8 px-4 theme-transition">
+
       <div className="quiz-container">
         <header className="text-center mb-8 theme-transition">
           <div className="flex items-center justify-center mb-4">
@@ -46,7 +47,7 @@ function App() {
             Test your knowledge with these fun questions!
           </p>
           <p className="text-sm text-gray-500 dark:text-gray-400 font-medium theme-transition">
-            Created by <span className="text-blue-600 dark:text-blue-400">VIRAT GANDHI</span>
+            Created by <span className="text-blue-600 dark:text-blue-400">PRATYUSHSRIVASTAVASGN</span>
           </p>
         </header>
         
